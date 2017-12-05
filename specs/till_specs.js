@@ -20,7 +20,7 @@ describe('Till', function() {
     basket.addItem(smokedTea);
     basket.addItem(mintTea);
     assert.strictEqual(basket.load.length, 2);
-    assert.strictEqual(till.totalCost(basket), 33.60);
+    assert.strictEqual(till.totalCost(basket.load), 33.60);
   });
 
 });
